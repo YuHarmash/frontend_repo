@@ -1,2 +1,2 @@
 # frontend_repo
-Репозитарій для вивчення frontend
+Репозиторій для вивчення frontend
