@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	/*background-color: black;*/
+	background: linear-gradient(#000000, #0a0a0a, #000000);
+	font-family: Tahoma;
+	color: white;
+}
+
+.container{
+	width: 960px;
+	height: 883px;
+	margin: 0 auto;
+	background-image: url(../img/bg.jpg);
+	font-size: 15px;
+}
+
+.header{
+	height: 144px;
+	padding: 50px 70px 0 70px;
+}
+
+.contacts{
+	float: right;
+	width: 102px;
+	margin-top: 85px;
+}
+
+p{
+	font-size: 10px;
+	line-height: 20px;
+}
+
+.phone, .mail{
+	font-size: 9px;
+	line-height: normal;
+}
+.content{
+	margin: 0 auto;
+	width: 550px;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: underline;
+}
+a img {
+	width: 530px;
+	height: 366px; 
+    display: block;
+}
+
+.footer{
+	text-align: center;
+	margin: 120px;
+}
