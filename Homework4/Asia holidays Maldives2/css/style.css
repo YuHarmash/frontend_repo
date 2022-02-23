@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Tahoma;
+	background-image: url(../img/bg.jpg);
+	background-size: 100%
+	/*background-repeat: no-repeat;*/
+}
+
+.container{
+	width: 1100px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #424c43;
+	background: white;
+	box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+}
+
+.clearfix:after{
+		 	content: '';
+		 	clear: both;
+		 	display: block;
+}
+.header{
+	position: relative;
+	padding: 10px 0 0 0;
+} 
+
+.contacts{
+	float: right;
+	color: #06BBE6;
+	font-size: 12px;
+	line-height: 20px;
+	width: 156px;
+}
+
+.contacts:first-line{
+	font-weight: bold;
+}
+
+.catalog {
+	width: 334px;
+	height: 59px;
+    position: absolute;
+    left: 740px;
+    top: 125px;
+}
+.catalog li {
+    display: inline-block;
+
+/*    width: 270px;*/
+    
+    /**/
+    /*vertical-align: top;*/
+    text-align: center;
+}
+.catalog img {
+    display: block;
+    /*margin: 0 auto;*/
+    margin: 0 5px 0 5px;
+}
+.catalog a {
+	font-size: 10px;
+    color: #06BBE6;
+} 
+
+.logo{
+	margin-left: 25px;
+	margin-top: 22px;
+	float: left;
+}
+
+.photo{
+	border-top: 1px solid #06BBE6;
+	border-bottom: 1px solid #06BBE6;
+	margin-top: -2px;
+	width: 1100px;
+}
+
+ul {
+	list-style: none;
+}
+
+.menu{
+	color: white;
+ 	background: linear-gradient(to top, rgb(48,48,48), rgb(55,55,55));
+ 	border-bottom: 1px solid black;
+ 	box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
+ 	margin: -2px auto;
+ 	padding: 0 29px;
+ 	z-index: 1;
+}
+
+.menu li{
+ 	float: left;
+ 	/*width: 120px;*/
+	height: 20px; /* высоту лучше жестко указать, чтобы выпадающее меню появлялось в предсказуемом месте */
+ 	padding: 5px;
+ 	margin: 0 28px;
+ 	position: relative; /* чтобы выпадающее меню позиционировалось относительно родителя */
+}
+
+.menu li ul {
+	display: none; /* скрываем выпадающе меню */
+	position: absolute; /* чтобы положение подменю не влияло на окружение и легко было позиционировать */
+	top: 30px; /* высоту лучше не делать большей высоты пункта меню первого уровня, иначе попасть на подменю будет проблематично */
+	/*left: 20px;*/
+	width: 140px;
+	background: #303030;
+	box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
+	z-index: 2;
+}
+
+.menu li ul li {
+	float: none;
+	display: block;
+	background: none;
+	margin: 0;
+	padding: 5px;
+}
+
+.menu li:hover ul {
+display: block; /* при наведении на пункт меню первого уровня, показывем подменю */
+}
+
+.menu a{
+	color: white;
+ 	text-decoration: none;
+}
+.content {
+	width: 1100px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.sidebar{
+	width:209px;
+	float:left;
+	background: #edeef0;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+	border-right: solid 1px #c7cacf;
+}
+
+.texts{
+	width:680px;
+	margin: 0 auto;
+	float: left;
+	background: white;*/
+	/*padding-bottom: 20000px;
+	margin-bottom: -20000px;*/
+}
+
+.news{
+    width:209px;
+    float: left;
+    background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    border-left: solid 1px #c7cacf;
+}
+h1 {
+	text-align: center;
+	margin:  10px 0 10px 0; 
+	font-size: 18px;
+}
+.txtm {
+	line-height: 170%;
+	margin: 0 0 10px 15px;
+}
+
+.footer{
+	margin: 10px;
+	text-align: center;
+	color:white;
+	font-size: 12px;
+}

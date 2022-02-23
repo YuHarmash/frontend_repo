@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Tahoma;
+	background-image: url(../img/bg.jpg);
+}
+
+.container{
+	width: 1000px;
+	/*height: 990px;*/
+	margin: 0 auto;
+	font-size: 14px;
+	color: #424c43;
+	background: white;
+	box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+}
+
+.clearfix:after{
+		 	content: '';
+		 	clear: both;
+		 	display: block;
+}
+
+.header{
+	padding: 10px 0 0 0;
+}
+
+.contacts{
+	float: right;
+	color: #06BBE6;
+	font-size: 12px;
+	line-height: 20px;
+	width: 156px;
+}
+
+.contacts:first-line{
+	font-weight: bold;
+}
+
+.logo{
+	margin-left: 25px;
+}
+
+.photo{
+	border-top: 1px solid #06BBE6;
+	border-bottom: 1px solid #06BBE6;
+	margin-top: -2px;
+}
+
+.menu{
+ 	position: relative;
+ 	overflow: hidden;
+ 	background: linear-gradient(to top, rgb(48,48,48), rgb(55,55,55));
+ 	border-bottom: 1px solid black;
+ 	box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
+}
+
+.menu li{
+ 	float: left;
+ 	list-style: none;
+ 	padding: 5px;
+ 	margin: 5px;
+}
+.menu a{
+ 	color: white;
+ 	text-decoration: none;
+}
+
+.content {
+	position: relative;
+}
+.fon1 {  /* фон для левой колонки (серый) */
+	width: 100%;
+	/*background: blue;*/
+	background: #edeef0;
+	float: left; /* делаем все обертки плавающими блоками чтобы избежать добавления блока с clear: both; */
+	position: relative;  /*чтобы иметь возможность сместить фон*/ 
+	right: 58%; /* обнажаем фон для центральной колонки. 58% - ширина центральной колонки*/ 
+}
+
+.fon2 {/* фон для центральной колонки (белый) */
+	width: 100%;
+	/*background: red;*/
+	background: white;
+	float: left;
+	position: relative;
+	right: 21%; /* обнажаем фон для правой колонки. 21% - ширина правой колонки */
+}
+
+.fon3 {/* фон для правой колонки (серый) */
+	width: 100%;
+	background: #edeef0;
+	/*background: yellow;*/
+	float: left;
+}
+
+.sidebar{
+	width:21%;
+	float:left;
+	overflow: hidden; /* страховка от ломки верстки объектами шире размера колонки-родителя */
+	position:relative;
+	left:79%; /* возвращаем колонки с контентом на свои позиции. 79% - сумма смещений оберток fon1 и fon2 */
+}
+
+.texts {
+	width:58%;
+	float: left;
+	overflow: hidden;
+	position:relative;
+	left:79%;
+}
+
+.news {
+    width:21%;
+    float: left;
+    overflow: hidden;
+    position:relative;
+	left:79%;
+}
+
+.footer{
+	margin: 10px;
+	text-align: center;
+	color:white;
+	font-size: 12px;
+}
